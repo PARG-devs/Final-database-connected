@@ -7,7 +7,7 @@ function App() {
   
   const handleSubmit=(e,name)=>{
         e.preventDefault()
-        axios.post('https://final-backend.netlify.app/app/signup',{name:name})
+        axios.post('http://localhost:4000/app/signup',{name:name})
           .then(res => console.log(res.data));
 
         setname('')
