@@ -7,20 +7,8 @@ function App() {
   
   const handleSubmit=(e,name)=>{
         e.preventDefault()
-        axios.post('http://localhost:4000/app/signup',{name:name})
-          .catch(function (error) {
-          if (error.response) {
-            console.log(error.response.message);
-            console.log(error.response.status);
-            console.log(error.response.headers);
-          } else if (error.request) {
-            console.log(error.request);
-          } else {
-            
-            console.log('Error', error.message);
-          }
-          console.log(error.config);
-        });
+        axios.post('https://final-backend.netlify.app/app/signup',{name:name})
+          .then(res => console.log(res.data));
 
         setname('')
   }
