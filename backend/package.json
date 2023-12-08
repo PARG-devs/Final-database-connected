@@ -6,7 +6,7 @@
   "main": "server.cjs",
   "scripts": {
     "start":"nodemon server.cjs",
-    "build": "react-scripts build"
+    "build": "npm i"
   },
   "author": "GokulPSVG",
   "license": "ISC",
