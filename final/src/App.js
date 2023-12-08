@@ -10,7 +10,7 @@ function App() {
   
   const handleSubmit=(e,name)=>{
         e.preventDefault()
-        axios.post('http://localhost:3000/app/signup',{name:name})
+        axios.post('https://final-backend-i034.onrender.com/app/signup',{name:name})
           .then(res => console.log(res.data));
         setname('')
   }
