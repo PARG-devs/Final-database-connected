@@ -1,8 +1,8 @@
-const express=require('express')
+const express= require('express')
 const mongoose=require('mongoose')
 const app = express()
 const dotenv=require('dotenv')
-const routeUrls=require('./routes/routes')
+const routeUrls=require('./routes/routes.cjs')
 const cors=require('cors')
 
 dotenv.config()

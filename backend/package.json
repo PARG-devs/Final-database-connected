@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "final chance",
   "type": "module",
-  "main": "server.js",
+  "main": "server.cjs",
   "scripts": {
-    "start":"nodemon server.js",
+    "start":"nodemon server.cjs",
     "build": "react-scripts build"
   },
   "author": "GokulPSVG",
